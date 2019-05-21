@@ -7,6 +7,12 @@ destinatario = 'cleversonkleber@gmail.com'
 assunto      = 'Enviando email com python'
 texto        = 'Esse email foi enviado usando python! :)'
 
+# self.outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI").Folders(mailbox)
+# self.inbox = self.outlook.Folders('Caixa de Entrada').Folders('a00-Interaxa')
+# messages = self.inbox.Items
+# message = messages.GetFirst()
+
+
 # Preparando a mensagem
 msg = '\r\n'.join([
   'From: %s' % remetente,
